@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use SoapClient;
 
 class soap extends Controller{
 
