@@ -79,6 +79,8 @@ Route::group(['middleware'=>['auth']],function(){
         
         Route::get('/accesorio', 'AccesorioController@index');
         
+        Route::post('/soap', 'soap@soap');
+        
         Route::get('/libro', 'LibroController@index');
         Route::post('/libro/registrar', 'LibroController@store');
         Route::put('/libro/actualizar', 'LibroController@update');
