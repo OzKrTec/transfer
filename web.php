@@ -78,8 +78,6 @@ Route::group(['middleware'=>['auth']],function(){
     Route::group(['middleware' => ['Administrador']], function () {
         
         Route::get('/accesorio', 'AccesorioController@index');
-                
-        Route::post('/soap', 'soap@soap');
         
         Route::get('/libro', 'LibroController@index');
         Route::post('/libro/registrar', 'LibroController@store');
@@ -117,5 +115,3 @@ Route::group(['middleware'=>['auth']],function(){
     });
 
 });
-
-//Route::get('/home', 'HomeController@index')->name('home');
