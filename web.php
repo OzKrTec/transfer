@@ -113,5 +113,5 @@ Route::group(['middleware'=>['auth']],function(){
         Route::put('/fac_servicio/actualizar', 'Fac_servicioController@update');
         
     });
-
+    URL::forceScheme('https');
 });
