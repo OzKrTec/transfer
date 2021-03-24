@@ -10,7 +10,7 @@ public function soap(){
 
     try {
       //code...
-      $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx');
+      $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
 
       $response=$soapClient->createTransactionPaymentHosting();
 
