@@ -7,8 +7,12 @@ use SoapClient;
 class soap extends Controller{
 
 public function soap(){
-
-    try {
+define("DEBUG", TRUE);
+if(DEBUG)
+{
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+}
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
 
@@ -32,10 +36,6 @@ public function soap(){
 
       var_dump($result);
 
-    } catch (Exception $e) {
-      //throw $th;
-      $e->getMessage();
-    }
 
 
 }
