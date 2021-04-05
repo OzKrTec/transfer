@@ -19,8 +19,8 @@ if(DEBUG)
       // $response=$soapClient->createTransactionPaymentHosting();
 
       // var_dump($response);
-
-      $servicio="https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL"; //url del servicio
+try {
+      $servicio="https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?wsdl"; //url del servicio
       $parametros=array(); //parametros de la llamada
       $parametros['ticketOfficeID']="3109";
       $parametros['amount']="20000";
@@ -36,7 +36,10 @@ if(DEBUG)
 
       var_dump($result);
 
-
+}
+catch (Exception $e){
+    echo $e->getMessage();
+}
 
 }
 
