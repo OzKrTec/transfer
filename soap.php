@@ -16,7 +16,7 @@ public function soap(){
 
       // var_dump($response);
 
-      $servicio="https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting"; //url del servicio
+      $servicio="https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx"; //url del servicio
       $parametros=array(); //parametros de la llamada
       $parametros['ticketOfficeID']="3109";
       $parametros['amount']="20000";
