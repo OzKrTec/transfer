@@ -10,13 +10,17 @@ public function soap(){
 
     try {
       //code...
-        $client = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
-        var_dump($client->__getFunctions());
+      $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
+
+      $response=$soapClient->createTransactionPaymentHosting();
+
+      var_dump($response);
 
     } catch (Exception $e) {
       //throw $th;
       $e->getMessage();
     }
+
 
 
 }
