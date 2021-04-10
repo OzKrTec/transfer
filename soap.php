@@ -3,16 +3,12 @@
 namespace App\Http\Controllers;
 
 use SoapClient;
+use SimpleXMLElement;
 
 class soap extends Controller{
 
 public function soap(){
-define("DEBUG", TRUE);
-if(DEBUG)
-{
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
-}
+
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
 
@@ -40,6 +36,7 @@ if(DEBUG)
 // catch (Exception $e){
 //     echo $e->getMessage();
 // }
+echo 'Exito!';
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
     $client = new SoapClient($url);
 
