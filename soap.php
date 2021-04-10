@@ -40,7 +40,7 @@ if(DEBUG)
 // catch (Exception $e){
 //     echo $e->getMessage();
 // }
-    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?wsdl';
+    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
     $client = new SoapClient($url);
 
     $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
@@ -56,15 +56,17 @@ if(DEBUG)
     $params = new stdClass();
     $params->xml = $xmlr->asXML();
 
-    $result = new SimpleXMLElement($client->createTransactionPaymentHosting($params)->CustomerSearchSResult->any);
+    $result = new SimpleXMLElement($client->createTransactionPaymentHosting($params));
 
-    $r = current($result->xpath('/Customers/ResultCode'));
+    var_dump($result);
 
-    if ( $r == '-1' ) {
-            echo 'Fallo: '.$result->xpath('/Customers/ErrorMessage')[0];
-    } else {
-            echo 'Exito!';
-    }
+    // $r = current($result->xpath('/Customers/ResultCode'));
+
+    // if ( $r == '-1' ) {
+    //         echo 'Fallo: '.$result->xpath('/Customers/ErrorMessage')[0];
+    // } else {
+    //         echo 'Exito!';
+    // }
 
 }
 
