@@ -37,7 +37,7 @@ public function soap(){
 //     echo $e->getMessage();
 // }
 echo 'Exito!';
-    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
+    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting';
     $client = new SoapClient($url);
 
     $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
