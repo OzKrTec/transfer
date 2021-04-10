@@ -54,6 +54,8 @@ $options = array(
     'vatAmount' => '1234',
     'paymentID' => '123',
     'paymentDescription' => 'desc',
+    'referenceNumber1' => 'desc',
+    'entity_url' => 'https://100.1.60.110',
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
