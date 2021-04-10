@@ -50,6 +50,9 @@ $options = array(
     'ticketOfficeID' => '3109',
     'serviceCode' => '1001',
     'amount' => '1001',
+    'vatAmount' => '1001',
+    'vatAmount' => '1234',
+    'paymentDescription' => 'desc',
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
