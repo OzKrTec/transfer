@@ -46,24 +46,28 @@ $options = array(
                 'verify_peer_name' => false,
                 'allow_self_signed' => true
           )
-    )));
+    )),
+    'ticketOfficeID' => '3109',
+    'serviceCode' => '1001',
+
+);
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
     $client = new SoapClient($url,$options);
 
-    $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
-    $xmlr->addChild('ticketOfficeID', '3109');
-    $xmlr->addChild('amount', '20000');
-    $xmlr->addChild('vatAmount', '0');
-    $xmlr->addChild('paymentID', '123');
-    $xmlr->addChild('paymentDescription', 'desc');
-    $xmlr->addChild('referenceNumber1', 'desc');
-    $xmlr->addChild('serviceCode', '1001');
-    $xmlr->addChild('entity_url', 'https://100.1.60.110');
+    // $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
+    // $xmlr->addChild('ticketOfficeID', '3109');
+    // $xmlr->addChild('amount', '20000');
+    // $xmlr->addChild('vatAmount', '0');
+    // $xmlr->addChild('paymentID', '123');
+    // $xmlr->addChild('paymentDescription', 'desc');
+    // $xmlr->addChild('referenceNumber1', 'desc');
+    // $xmlr->addChild('serviceCode', '1001');
+    // $xmlr->addChild('entity_url', 'https://100.1.60.110');
 
     $params = new \stdClass();
     $params->xml = $xmlr->asXML();
 
-    $result = new SimpleXMLElement($client->createTransactionPaymentHosting($params));
+    $result = new SimpleXMLElement($client->createTransactionPaymentHosting($options));
 
     var_dump($result);
 
