@@ -52,6 +52,7 @@ $options = array(
     'amount' => '1001',
     'vatAmount' => '1001',
     'vatAmount' => '1234',
+    'paymentID' => '123',
     'paymentDescription' => 'desc',
 
 );
