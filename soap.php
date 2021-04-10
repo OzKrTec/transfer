@@ -64,8 +64,8 @@ $options = array(
     // $xmlr->addChild('serviceCode', '1001');
     // $xmlr->addChild('entity_url', 'https://100.1.60.110');
 
-    $params = new \stdClass();
-    $params->xml = $xmlr->asXML();
+    // $params = new \stdClass();
+    // $params->xml = $xmlr->asXML();
 
     $result = new SimpleXMLElement($client->createTransactionPaymentHosting($options));
 
