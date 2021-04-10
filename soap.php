@@ -47,7 +47,7 @@ $options = array(
                 'allow_self_signed' => true
           )
     )));
-    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting';
+    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
     $client = new SoapClient($url,$options);
 
     $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
