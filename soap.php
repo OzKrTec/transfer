@@ -55,7 +55,9 @@ $options = array(
     'paymentID' => '123',
     'paymentDescription' => 'desc',
     'referenceNumber1' => 'desc',
+    'referenceNumber2' => 'desc',
     'entity_url' => 'https://100.1.60.110',
+    'email' => 'demo@gmail.com',
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
