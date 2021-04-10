@@ -37,8 +37,18 @@ public function soap(){
 //     echo $e->getMessage();
 // }
 echo 'Exito!';
+$options = array(
+    'cache_wsdl' => 0,
+    'trace' => 1,
+	'stream_context' => stream_context_create(array(
+          'ssl' => array(
+               'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+          )
+    )));
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting';
-    $client = new SoapClient($url);
+    $client = new SoapClient($url,$options);
 
     $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
     $xmlr->addChild('ticketOfficeID', '3109');
