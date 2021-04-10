@@ -71,7 +71,9 @@ $options = array(
     // $params = new \stdClass();
     // $params->xml = $xmlr->asXML();
 
-    $result = new SimpleXMLElement($client->createTransactionPaymentHosting($options));
+    // $result = new SimpleXMLElement($client->createTransactionPaymentHosting($options));
+
+     $result = $client->createTransactionPaymentHosting($options);//llamamos al métdo que nos interesa con los parámetros
 
     var_dump($result);
 
