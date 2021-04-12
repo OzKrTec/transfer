@@ -52,14 +52,14 @@ $options = array(
     'amount' => '15800',
     'vatAmount' => '15800',
     'vatAmount' => '1234',
-    'paymentID' => '123',
+    'paymentID' => '1234',
     'paymentDescription' => 'desc',
     'referenceNumber1' => 'desc',
     'referenceNumber2' => 'desc',
     'referenceNumber3' => 'desc',
     'entity_url' => 'https://100.1.60.110',
     'email' => 'demo@gmail.com',
-    // 'nombre_cliente' => 'OzKr  SIerra',
+    'name' => 'OzKr  SIerra',
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
