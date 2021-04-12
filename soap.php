@@ -49,8 +49,8 @@ $options = array(
     )),
     'ticketOfficeID' => '3109',
     'serviceCode' => '1001',
-    'amount' => '1001',
-    'vatAmount' => '1001',
+    'amount' => '15800',
+    'vatAmount' => '15800',
     'vatAmount' => '1234',
     'paymentID' => '123',
     'paymentDescription' => 'desc',
@@ -59,6 +59,7 @@ $options = array(
     'referenceNumber3' => 'desc',
     'entity_url' => 'https://100.1.60.110',
     'email' => 'demo@gmail.com',
+    'nombre_cliente' => 'OzKr  SIerra',
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
