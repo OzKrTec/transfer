@@ -59,7 +59,7 @@ $options = array(
     'referenceNumber3' => 'desc',
     'entity_url' => 'https://100.1.60.110',
     'email' => 'demo@gmail.com',
-    'nombre_cliente' => 'OzKr  SIerra',
+    // 'nombre_cliente' => 'OzKr  SIerra',
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
