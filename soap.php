@@ -96,9 +96,8 @@ $options = array(
     try {
 
     foreach ($variables as $objeto) {
-        foreach ($objeto->PaymentIdentifier as $idPay) {
-            $paymentId = $idPay;
-        }
+        $paymentId = $objeto->PaymentIdentifier;
+ 
     }
        echo $paymentId;
 
@@ -115,9 +114,10 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return [
-            'result' => $paymentId
-        ];
+    //  return [
+    //         'result' => $paymentId
+    //     ];
+    return $paymentId;
 }
 
 }
