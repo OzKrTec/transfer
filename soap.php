@@ -97,7 +97,7 @@ $options = array(
 
     foreach ($variables as $objeto) {
         foreach ($objeto->PaymentIdentifier as $idPay) {
-            var $paymentId= => $idPay;
+            $paymentId = $idPay;
         }
     }
        echo $paymentId;
