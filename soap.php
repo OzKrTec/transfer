@@ -93,18 +93,7 @@ $options = array(
 
     var_dump($variables);
 
-    try {
-
-    foreach ($variables as $objeto) {
-        $paymentId = $objeto->PaymentIdentifier;
- 
-    }
-       echo $paymentId;
-
-} catch (\Throwable $th) {
-
-        return $th->getMessage();
-}
+    
 
 
     // $r = current($result->xpath('/Customers/ResultCode'));
@@ -114,10 +103,9 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-    //  return [
-    //         'result' => $paymentId
-    //     ];
-    return $paymentId;
+     return [
+            'result' => $variables
+        ];
 }
 
 }
