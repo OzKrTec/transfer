@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 use SoapClient;
 use SimpleXMLElement;
 
 class soap extends Controller{
 
-public function soap(){
+public function soap(Request $request){
 
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
@@ -49,15 +50,15 @@ $options = array(
     )),
     'ticketOfficeID' => '3109',
     'serviceCode' => '1001',
-    'amount' => '15800',
-    'vatAmount' => '15800',
+    'amount' => $request->amount,
+    'vatAmount' => $request->amount,
     'vatAmount' => '1234',
-    'paymentID' => '12345',
-    'paymentDescription' => 'desc',
+    'paymentID' => $request->paymentID,
+    'paymentDescription' => $request->paymentDescription,
     'referenceNumber1' => 'desc',
     'referenceNumber2' => 'desc',
     'referenceNumber3' => 'desc',
-    'entity_url' => 'https://100.1.60.110',
+    'entity_url' => 'https://pruebas.enercer.com/main',
     'email' => 'demo@gmail.com',
     'name' => 'OzKr  SIerra',
 
