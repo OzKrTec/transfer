@@ -102,7 +102,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'result' => $result
+            'result' => $variables
         ];
 }
 
