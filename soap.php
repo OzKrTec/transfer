@@ -85,7 +85,9 @@ $options = array(
 
     var_dump($result);
 
-    $value = get_object_vars($result);
+    // $value = get_object_vars($result);
+
+    echo $result[0]->PaymentIdentifier;
 
 
     // $r = current($result->xpath('/Customers/ResultCode'));
@@ -96,7 +98,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'result' => $value
+            'result' => $result
         ];
 }
 
