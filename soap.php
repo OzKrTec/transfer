@@ -63,7 +63,7 @@ $options = array(
     'fields' => array(
           'PSEHostingField' => array(
             'Name' => array(
-               'id_cliente' => '91541579'
+               'id_cliente' => (string)'91541579'
           )              
           )
     ),
