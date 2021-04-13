@@ -37,7 +37,7 @@ public function soap(Request $request){
 // catch (Exception $e){
 //     echo $e->getMessage();
 // }
-echo 'Exito!';
+// echo 'Exito!';
 $options = array(
     'cache_wsdl' => 0,
     'trace' => 1,
@@ -93,6 +93,20 @@ $options = array(
 
     var_dump($variables);
 
+    try {
+
+    foreach ($variables as $objeto) {
+        foreach ($objeto->PaymentIdentifier as $idPay) {
+            var $paymentId= => $idPay;
+        }
+    }
+       echo $paymentId;
+
+} catch (\Throwable $th) {
+
+        return $th->getMessage();
+}
+
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
@@ -102,7 +116,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'result' => $variables
+            'result' => $paymentId
         ];
 }
 
