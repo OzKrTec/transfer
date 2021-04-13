@@ -85,7 +85,8 @@ $options = array(
 
     var_dump($result);
 
-    // $r = current($result->xpath('/Customers/ResultCode'));
+    $r = current($result->xpath('/createTransactionPaymentHostingResult/PaymentIdentifier'));
+    echo($r);
 
     // if ( $r == '-1' ) {
     //         echo 'Fallo: '.$result->xpath('/Customers/ErrorMessage')[0];
@@ -93,7 +94,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'result' => $result
+            'result' => $result.PaymentIdentifier
         ];
 }
 
