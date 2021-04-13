@@ -63,9 +63,9 @@ $options = array(
     'fields' => array(
           'PSEHostingField' => array(
             'Name' => array(
-               'id_cliente' => "c91541579"
+               'id_cliente' => $request->paymentDescription
           )              
-            ),
+            )
     ),
     // 'id_cliente' => '12121212',
     //  'fields'=>array('id_cliente'=>'91541579'),
