@@ -87,7 +87,10 @@ $options = array(
 
     // $value = get_object_vars($result);
 
-    echo $result[0]->PaymentIdentifier;
+    // echo $result[0]->PaymentIdentifier;
+    $variables = json_decode($result);
+
+    echo $variables;
 
 
     // $r = current($result->xpath('/Customers/ResultCode'));
