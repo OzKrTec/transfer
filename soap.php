@@ -60,8 +60,13 @@ $options = array(
     'referenceNumber3' => 'desc',
     'entity_url' => 'https://pruebas.enercer.com/main',
     'email' => 'demo@gmail.com',
-    'id_cliente' => '12121212',
-     'fields'=>array('id_cliente'=>'91541579'),
+    'fields' => stream_context_create(array(
+          'PSEHostingField' => array(
+               'id_cliente' => '91541579'
+          )
+    )),
+    // 'id_cliente' => '12121212',
+    //  'fields'=>array('id_cliente'=>'91541579'),
 
 );
     $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
