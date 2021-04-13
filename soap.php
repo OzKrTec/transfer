@@ -56,17 +56,17 @@ $options = array(
     'paymentID' => $request->paymentID,
     'paymentDescription' => $request->paymentDescription,
     'referenceNumber1' => '192.168.1.1',
-    'referenceNumber2' => 'desc',
+    'referenceNumber2' => 'Oscar Sierra',
     'referenceNumber3' => '91541579',
     'entity_url' => 'https://pruebas.enercer.com/main',
     'email' => 'demo@gmail.com',
-    'fields' => array(
-          'PSEHostingField' => array(
+    // 'fields' => array(
+    //       'PSEHostingField' => array(
             
-               'id_cliente' => strval($request->paymentDescription)
+    //            'id_cliente' => strval($request->paymentDescription)
                      
-            ),
-    ),
+    //         ),
+    // ),
     // 'id_cliente' => '12121212',
     //  'fields'=>array('id_cliente'=>'91541579'),
 
