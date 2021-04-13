@@ -85,6 +85,11 @@ $options = array(
 
     var_dump($result);
 
+    $paymentID = json_decode($result);
+    $paymentID_array = json_decode($result,true);
+    // echo $paymentID->PaymentIdentifier; // Ramiro013
+    echo $paymentID->PaymentIdentifier[1]; // Logro2
+
     // $r = current($result->xpath('/Customers/ResultCode'));
 
     // if ( $r == '-1' ) {
@@ -93,7 +98,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'result' => $result
+            'result' => $paymentID
         ];
 }
 
