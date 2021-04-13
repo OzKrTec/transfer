@@ -62,8 +62,8 @@ $options = array(
     'email' => 'demo@gmail.com',
     'fields' => array(
           'PSEHostingField' => array(
-            'Name' => array(
-               'id_cliente' => "91541579"
+            'name' => array(
+               'id_cliente' => "c91541579"
           )              
           )
     ),
