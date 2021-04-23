@@ -101,6 +101,7 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     var_dump($variables);
+    var_dump($variables[0],[0]);
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
