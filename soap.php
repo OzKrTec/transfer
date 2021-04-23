@@ -92,7 +92,7 @@ $options = array(
      $result = $client->createTransactionPaymentHosting($options);//llamamos al métdo que nos interesa con los parámetros
 
     var_dump($result);
-    var_dump($result['PaymentIdentifier']);
+    // var_dump($result['PaymentIdentifier']);
 
     // $value = get_object_vars($result);
 
@@ -101,9 +101,6 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     var_dump($variables);
-
-    
-
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
