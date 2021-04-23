@@ -102,7 +102,7 @@ $options = array(
     var_dump($variables);
 
 	// var_dump($variables['PaymentIdentifier']);
-    echo 'Fallo: '.$result->xpath('/createTransactionPaymentHostingResult/PaymentIdentifier')[0];
+    // echo 'Fallo: '.$result->xpath('/createTransactionPaymentHostingResult/PaymentIdentifier')[0];
 
 
     // $longitud = count($variables);
