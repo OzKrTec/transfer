@@ -55,7 +55,7 @@ $options = array(
     'vatAmount' => '1234',
     'paymentID' => $request->paymentID,
     'paymentDescription' => $request->paymentDescription,
-    'referenceNumber1' => '192.168.1.1',
+    'referenceNumber1' => '204.199.85.36',
     'referenceNumber2' => 'Oscar Sierra',
     'referenceNumber3' => '91541579',
     'entity_url' => 'https://pruebas.enercer.com/main',
@@ -99,10 +99,15 @@ $options = array(
     $jsonString = json_encode($result);
     $variables = json_decode($jsonString,true);
 
-    var_dump($variables);
+    // var_dump($variables);
 
-    
+    $longitud = count($variables);
 
+    foreach($variables as $objeto=>$PaymentIdentifier)
+	{
+	echo "El " . $objeto . " es " . $PaymentIdentifier;
+	echo "<br>";
+	}
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
