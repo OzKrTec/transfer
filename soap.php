@@ -101,16 +101,8 @@ $options = array(
 
     var_dump($variables);
 
-	// var_dump($variables['PaymentIdentifier']);
-    // echo 'Fallo: '.$result->xpath('/createTransactionPaymentHostingResult/PaymentIdentifier')[0];
+    
 
-
-    // $longitud = count($variables);
-
-    // foreach($variables as $objeto=>$PaymentIdentifier)
-	// {
-	// echo "<br>";
-	// }
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
