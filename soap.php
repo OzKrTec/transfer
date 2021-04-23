@@ -108,7 +108,7 @@ $options = array(
  	foreach($objeto as $rta)
  		{
  		echo $rta ." ";
-         $code= $rta['ReturnCode'];
+        // $code= $rta['ReturnCode'];
         //  $error= $rta[0][1];
         //  $idPay= $rta[0][2];
  		}
