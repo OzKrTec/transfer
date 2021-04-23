@@ -101,18 +101,19 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     var_dump($variables);
-
+    $arrayDatos=array();
     foreach($variables as $objeto)
  	{
  	echo "En este objeto juegan: ";
  	foreach($objeto as $rta)
  		{
  		echo $rta ." ";
-        // $code= $rta['ReturnCode'];
+         array_push($arrayDatos,$rta );
+        //  $code= $rta['ReturnCode'];
         //  $error= $rta[0][1];
         //  $idPay= $rta[0][2];
  		}
- 	echo $code;
+ 	print_r($arrayDatos);
  	}
 
     // $r = current($result->xpath('/Customers/ResultCode'));
