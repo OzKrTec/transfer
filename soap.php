@@ -99,9 +99,12 @@ $options = array(
     $jsonString = json_encode($result);
     $variables = json_decode($jsonString,true);
 
-    // var_dump($variables);
+    var_dump($variables);
 
-	var_dump($variables['PaymentIdentifier']);
+	// var_dump($variables['PaymentIdentifier']);
+    echo 'Fallo: '.$variables->xpath('/createTransactionPaymentHostingResult/PaymentIdentifier')[0];
+
+
     // $longitud = count($variables);
 
     // foreach($variables as $objeto=>$PaymentIdentifier)
