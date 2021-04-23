@@ -99,9 +99,9 @@ $options = array(
     $jsonString = json_encode($result);
     $variables = json_decode($jsonString,true);
 
-    var_dump($variables);
+    // var_dump($variables);
 
-	echo $variables['PaymentIdentifier'];
+	var_dump($variables['PaymentIdentifier']);
     // $longitud = count($variables);
 
     // foreach($variables as $objeto=>$PaymentIdentifier)
