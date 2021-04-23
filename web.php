@@ -80,7 +80,7 @@ Route::group(['middleware'=>['auth']],function(){
         Route::get('/accesorio', 'AccesorioController@index');
         
         Route::post('/soap', 'soap@soap');
-        Route::get('/soap/get', 'soap@getData');
+        Route::get('/soap/getData', 'soap@getData');
         
         Route::get('/libro', 'LibroController@index');
         Route::post('/libro/registrar', 'LibroController@store');
