@@ -114,6 +114,7 @@ $options = array(
         //  $idPay= $rta[0][2];
  		}
  	print_r($arrayDatos);
+ 	getData($arrayDatos);
  	}
 
     // $r = current($result->xpath('/Customers/ResultCode'));
@@ -127,7 +128,9 @@ $options = array(
             'resultado' => $arrayDatos
         ];
 }
-
+public function getData($dato){
+    return $dato;
+}
 }
 
 ?>
