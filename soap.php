@@ -124,7 +124,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'result' => $variables
+            'result' => $arrayDatos
         ];
 }
 
