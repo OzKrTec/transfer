@@ -99,15 +99,15 @@ $options = array(
     $jsonString = json_encode($result);
     $variables = json_decode($jsonString,true);
 
-    // var_dump($variables);
+    var_dump($variables);
 
-    $longitud = count($variables);
+	echo $variables['PaymentIdentifier'];
+    // $longitud = count($variables);
 
-    foreach($variables as $objeto=>$PaymentIdentifier)
-	{
-	echo "El " . $objeto . " es " . $PaymentIdentifier;
-	echo "<br>";
-	}
+    // foreach($variables as $objeto=>$PaymentIdentifier)
+	// {
+	// echo "<br>";
+	// }
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
