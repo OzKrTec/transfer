@@ -101,7 +101,16 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     var_dump($variables);
-    var_dump($variables[0],[0]);
+
+    foreach($variables as $objeto)
+ 	{
+ 	echo "En este objeto juegan: ";
+ 	foreach($objeto as $rta)
+ 		{
+ 		echo $rta ." ";
+ 		}
+ 	echo "<br>";
+ 	}
 
     // $r = current($result->xpath('/Customers/ResultCode'));
 
