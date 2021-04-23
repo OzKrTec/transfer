@@ -108,8 +108,11 @@ $options = array(
  	foreach($objeto as $rta)
  		{
  		echo $rta ." ";
+         $code= $rta[0][0];
+         $error= $rta[0][1];
+         $idPay= $rta[0][2];
  		}
- 	echo "<br>";
+ 	echo $code.'  '. $error.'  '. $idPay;
  	}
 
     // $r = current($result->xpath('/Customers/ResultCode'));
