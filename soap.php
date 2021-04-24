@@ -6,8 +6,11 @@ use SoapClient;
 use SimpleXMLElement;
 
 class soap extends Controller{
-    public $idPay="ssss";
 
+    public function getData($dato){
+
+       return $dato;
+    }
     public function soap(Request $request){        
     $arrayDatos=array();
       //code...
@@ -121,7 +124,7 @@ for ($i=0; $i <$longitud ; $i++) {
     $idPay=$arrayDatos[1];
     echo("rta idPay  ".$idPay);
 }
-//   $getData($idPay);
+  $getData($idPay);
  	
  	}
     // $r = current($result->xpath('/Customers/ResultCode'));
@@ -135,10 +138,7 @@ for ($i=0; $i <$longitud ; $i++) {
             'resultado' => $arrayDatos
         ];
 }
-public function getData(){
 
-       return $idPay;
-}
 }
 
 ?>
