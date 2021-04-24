@@ -8,7 +8,7 @@ use SimpleXMLElement;
 
 class soap extends Controller{
 
-    public $idPay="";
+    public $idPay="Hola";
     public function soap(Request $request){
     $arrayDatos=array();
       //code...
@@ -119,7 +119,7 @@ $options = array(
      $longitud = count($arrayDatos);
 for ($i=0; $i <$longitud ; $i++) { 
     # code...
-    $idPay=$arrayDatos[$i];
+    // $idPay=$arrayDatos[$i];
 }
 // $getData($idPay);
  	
