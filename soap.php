@@ -137,7 +137,7 @@ echo($idPay);
 }
 public function getData(){
 
-       
+       return $idPay;
 }
 }
 
