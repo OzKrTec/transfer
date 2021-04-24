@@ -8,8 +8,8 @@ use SimpleXMLElement;
 
 class soap extends Controller{
 
+    public $idPay="";
     public function soap(Request $request){
-    $idPay="";
     $arrayDatos=array();
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
@@ -121,7 +121,7 @@ for ($i=0; $i <$longitud ; $i++) {
     # code...
     $idPay=$arrayDatos[$i];
 }
-getData($idPay);
+// $getData($idPay);
  	
  	}
     // $r = current($result->xpath('/Customers/ResultCode'));
@@ -135,9 +135,9 @@ getData($idPay);
             'resultado' => $arrayDatos
         ];
 }
-public function getData($dato){
+public function getData(){
 
-       return $dato;
+       return $idPay;
 }
 }
 
