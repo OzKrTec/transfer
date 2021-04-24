@@ -115,7 +115,7 @@ $options = array(
     }
  	print_r($arrayDatos);
 
-     $longitud = count($ararrayDatosray);
+     $longitud = count($arrayDatos);
 for ($i=0; $i <$longitud ; $i++) { 
     # code...
     echo($arrayDatos[$i]);
