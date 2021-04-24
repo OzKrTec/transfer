@@ -134,8 +134,7 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return  "Hola Mundi";
-       
+     return array($idPay);
 }
 
 }
