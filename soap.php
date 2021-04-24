@@ -111,12 +111,16 @@ $options = array(
          array_push($arrayDatos,$rta );
         //  $code= $rta['ReturnCode'];
         //  $error= $rta[0];
-         $idPay= $rta[2];
+        
     }
  	print_r($arrayDatos);
+
+for ($i=0; $i <$arrayDatos ; $i++) { 
+    # code...
+    echo($arrayDatos[i]);
+}
  	// getData($arrayDatos);
  	}
-echo( $idPay);
     // $r = current($result->xpath('/Customers/ResultCode'));
 
     // if ( $r == '-1' ) {
