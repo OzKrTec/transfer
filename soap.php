@@ -129,7 +129,9 @@ $options = array(
         ];
 }
 public function getData(){
-        return  [array($arrayDatos)];
+        return [
+            'resultado' => $variables
+        ];
 }
 }
 
