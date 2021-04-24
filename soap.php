@@ -121,7 +121,7 @@ for ($i=0; $i <$longitud ; $i++) {
     # code...
     $idPay=$arrayDatos[$i];
 }
-var_dump($idPay);
+echo($idPay);
  	
  	}
     // $r = current($result->xpath('/Customers/ResultCode'));
