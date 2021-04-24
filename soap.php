@@ -110,13 +110,13 @@ $options = array(
  		echo $rta ." ";
          array_push($arrayDatos,$rta );
         //  $code= $rta['ReturnCode'];
-        //  $error= $rta[0][1];
-        //  $idPay= $rta[0][2];
- 		}
+        //  $error= $rta[0];
+         $idPay= $rta[2];
+    }
  	print_r($arrayDatos);
  	// getData($arrayDatos);
  	}
-
+echo( $idPay);
     // $r = current($result->xpath('/Customers/ResultCode'));
 
     // if ( $r == '-1' ) {
@@ -129,9 +129,8 @@ $options = array(
         ];
 }
 public function getData(){
-        return [
-            'resultado' => $variables
-        ];
+
+       
 }
 }
 
