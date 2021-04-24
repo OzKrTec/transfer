@@ -134,9 +134,8 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return [
-            'resultado' => $arrayDatos
-        ];
+     return  "Hola Mundi";
+       
 }
 
 }
