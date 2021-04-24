@@ -135,7 +135,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'resultado' => $variables
+            'resultado' => $arrayDatos
         ];
 }
 
