@@ -119,8 +119,9 @@ $options = array(
 for ($i=0; $i <$longitud ; $i++) { 
     # code...
     $idPay=$arrayDatos[$i];
+    echo("rta idPay".$idPay);
 }
-  $getData($idPay);
+//   $getData($idPay);
  	
  	}
     // $r = current($result->xpath('/Customers/ResultCode'));
