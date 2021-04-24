@@ -122,8 +122,8 @@ $options = array(
 for ($i=0; $i <$longitud ; $i++) { 
     # code...
     $idPay=$arrayDatos[$i];
-    echo("rta idPay  ".$idPay);
-    $getData($idPay);
+    var_dump(getData($idPay));
+    
 }
  	
  	}
