@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
@@ -7,6 +6,7 @@ use SoapClient;
 use SimpleXMLElement;
 
 class soap extends Controller{
+    protected $idPay="";
 
     public function soap(Request $request){        
     $arrayDatos=array();
@@ -118,8 +118,8 @@ $options = array(
      $longitud = count($arrayDatos);
 for ($i=0; $i <$longitud ; $i++) { 
     # code...
-    $idPay=$arrayDatos[$i];
-    echo("rta idPay".$idPay);
+    $idPay=$arrayDatos[1];
+    echo("rta idPay  ".$idPay);
 }
 //   $getData($idPay);
  	
@@ -135,9 +135,9 @@ for ($i=0; $i <$longitud ; $i++) {
             'resultado' => $arrayDatos
         ];
 }
-public function getData($dato){
+public function getData(){
 
-       return $dato;
+       return $idPay;
 }
 }
 
