@@ -6,7 +6,7 @@ use SoapClient;
 use SimpleXMLElement;
 
 class soap extends Controller{
-    protected $idPay="";
+    public $idPay="ssss";
 
     public function soap(Request $request){        
     $arrayDatos=array();
