@@ -10,6 +10,7 @@ class soap extends Controller{
 
 public function soap(Request $request){
         $arrayDatos=array();
+        $idPay="";
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
 
@@ -118,9 +119,10 @@ $options = array(
      $longitud = count($arrayDatos);
 for ($i=0; $i <$longitud ; $i++) { 
     # code...
-    echo($arrayDatos[$i]);
+    $idPay=$arrayDatos[$i];
 }
- 	// getData($arrayDatos);
+var_dump($idPay);
+ 	
  	}
     // $r = current($result->xpath('/Customers/ResultCode'));
 
