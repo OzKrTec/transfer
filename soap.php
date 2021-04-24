@@ -119,10 +119,10 @@ $options = array(
  	print_r($arrayDatos);
 
      $longitud = count($arrayDatos);
-for ($i=0; $i <$longitud ; $i++) { 
+    for ($i=0; $i <$longitud ; $i++) { 
     # code...
     $idPay=$arrayDatos[$i];
-    var_dump(getData($idPay));
+    var_dump($idPay);
     
 }
  	
@@ -135,7 +135,7 @@ for ($i=0; $i <$longitud ; $i++) {
     //         echo 'Exito!';
     // }
      return [
-            'resultado' => $arrayDatos
+            'resultado' => $idPay
         ];
 }
 
