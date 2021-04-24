@@ -135,7 +135,7 @@ $options = array(
     //         echo 'Exito!';
     // }
      return [
-            'resultado' => $idPay
+            'resultado' => $variables
         ];
 }
 
