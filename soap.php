@@ -9,7 +9,7 @@ use SimpleXMLElement;
 class soap extends Controller{
 
 public function soap(Request $request){
-
+        $arrayDatos=array();
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
 
@@ -101,7 +101,7 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     var_dump($variables);
-    $arrayDatos=array();
+    // $arrayDatos=array();
     foreach($variables as $objeto)
  	{
  	echo "En este objeto juegan: ";
@@ -114,7 +114,7 @@ $options = array(
         //  $idPay= $rta[0][2];
  		}
  	print_r($arrayDatos);
- 	getData($arrayDatos);
+ 	// getData($arrayDatos);
  	}
 
     // $r = current($result->xpath('/Customers/ResultCode'));
@@ -128,9 +128,9 @@ $options = array(
             'resultado' => $arrayDatos
         ];
 }
-public function getData($dato){
+public function getData(){
         return [
-            'resultado' => $dato
+            'resultado' => $arrayDatos
         ];
 }
 }
