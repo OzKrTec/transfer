@@ -129,7 +129,7 @@ $options = array(
         ];
 }
 public function getData(){
-        return  print_R($arrayDatos);
+        return  var_dump($arrayDatos);
 }
 }
 
