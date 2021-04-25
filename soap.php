@@ -135,7 +135,7 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return $arrayDatos;
+     return redirectToAction('soapController@getData', $arrayDatos);
 }
 
 }
