@@ -134,7 +134,7 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return $idPay;
+     return $arrayDatos;
 }
 
 }
