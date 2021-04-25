@@ -103,7 +103,7 @@ $options = array(
     $jsonString = json_encode($result);
     $variables = json_decode($jsonString,true);
 
-    var_dump($variables);
+    // var_dump($variables);
     // $arrayDatos=array();
     foreach($variables as $objeto)
  	{
@@ -116,13 +116,13 @@ $options = array(
         //  $error= $rta[0];
         
     }
- 	print_r($arrayDatos);
+ 	// print_r($arrayDatos);
 
      $longitud = count($arrayDatos);
     for ($i=0; $i <$longitud ; $i++) { 
     # code...
     $idPay=$arrayDatos[$i];
-    var_dump($idPay);
+    // var_dump($idPay);
     
 }
  	
