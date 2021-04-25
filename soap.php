@@ -135,13 +135,7 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-
-    $variable = $arrayDatos;
-
-    $temp = compact($arrayDatos);
-     return [
-        'resultado' => 'valor'
-     ];
+     return $arrayDatos;
 }
 
 }
