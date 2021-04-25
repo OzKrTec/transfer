@@ -108,7 +108,7 @@ $options = array(
     foreach($variables as $objeto)
  	{
  	echo "En este objeto juegan: ";
- 	foreach($objeto as $rta)
+ 	foreach($objeto as $rta) 
  		{
  		echo $rta ." ";
          array_push($arrayDatos,$rta );
@@ -116,7 +116,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
- 	// print_r($arrayDatos);
+ 	print_r(toObject($arrayDatos));
 
      $longitud = count($arrayDatos);
     for ($i=0; $i <$longitud ; $i++) { 
