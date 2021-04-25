@@ -12,7 +12,7 @@ class soap extends Controller{
        return $dato;
     }
     public function soap(Request $request){        
-    $arrayDatos=array();
+    // $arrayDatos=array();
       //code...
       // $soapClient = new SoapClient('https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?op=createTransactionPaymentHosting');
 
@@ -116,6 +116,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
+    getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
 
      $longitud = count($arrayDatos);
