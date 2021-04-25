@@ -135,7 +135,13 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return response()->redirectToAction('soap@getData', $arrayDatos);
+
+    $variable = $arrayDatos;
+
+    $temp = compact($arrayDatos);
+     return [
+        'resultado' => 'valor'
+     ];
 }
 
 }
