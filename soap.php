@@ -119,8 +119,8 @@ $options = array(
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
      
-     $var = get_object_vars($variables);
- 	print_r($var);
+    //  $var = get_object_vars($variables);
+ 	// print_r($var);
 
      $longitud = count($arrayDatos);
     for ($i=0; $i <$longitud ; $i++) { 
