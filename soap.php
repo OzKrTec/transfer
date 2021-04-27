@@ -137,16 +137,18 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return [
-         'resultado'=>$arrayDatos
-     ];
+    //  return $arrayDatos;
+    return redirect()->action(
+    'soap@getData',
+    ['algunParametro' => '$algunParametro']
+);
 }
-    public function getData(){
+    public function getData($dato){
         var_dump($longitud);
     // //    return [
     // //        'resultado'=> $this->$arrayDatos
     // //    ];
-    // return $arrayDatos;
+    return $dato;
     }
 
 }
