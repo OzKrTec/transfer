@@ -113,7 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    // $variable = self::getData($arrayDatos);
+    $variable = self::getData();
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
