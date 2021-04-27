@@ -144,7 +144,7 @@ $options = array(
 );
 }
     public function getData($dato){
-        var_dump($longitud);
+        // var_dump($longitud);
     // //    return [
     // //        'resultado'=> $this->$arrayDatos
     // //    ];
