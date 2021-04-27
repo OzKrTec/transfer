@@ -137,9 +137,9 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-    //  return $arrayDatos;
-    return redirect()->action(
-    'soap@getData',[2]);
+     return $arrayDatos;
+    // return redirect()->action(
+    // 'soap@getData',[2]);
     // ['algunParametro']
 // );
 }
