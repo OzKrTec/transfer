@@ -91,7 +91,7 @@ $options = array(
 
      $result = $client->createTransactionPaymentHosting($options);//llamamos al métdo que nos interesa con los parámetros
 
-    var_dump($result);
+    // var_dump($result);
     // var_dump($result['PaymentIdentifier']);
 
     // $value = get_object_vars($result);
@@ -104,15 +104,16 @@ $options = array(
     // global $arrayDatos;
     foreach($variables as $objeto)
  	{
- 	echo "En este objeto juegan: ";
+ 	// echo "En este objeto juegan: ";
  	foreach($objeto as $rta) 
  		{
- 		echo $rta ." ";
+ 		// echo $rta ." ";
          array_push($arrayDatos,$rta );
         //  $code= $rta['ReturnCode'];
         //  $error= $rta[0];
         
     }
+    var_dump($arrayDatos);
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
     // print_r(toObject($arrayDatos));
