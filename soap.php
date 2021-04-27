@@ -101,7 +101,7 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     // var_dump($variables);
-    // $arrayDatos=array();
+    $arrayDatos=array();
     foreach($variables as $objeto)
  	{
  	echo "En este objeto juegan: ";
