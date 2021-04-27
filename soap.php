@@ -137,11 +137,11 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-    //  return $arrayDatos;
-    return redirect()->action(
-    'soap@getData',
-    ['algunParametro']
-);
+     return $arrayDatos;
+    // return redirect()->action(
+    // 'soap@getData',
+    // ['algunParametro']
+// );
 }
     public function getData($dato){
         // var_dump($longitud);
