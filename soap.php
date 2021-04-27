@@ -116,6 +116,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
+    $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
      
