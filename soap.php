@@ -101,7 +101,7 @@ $options = array(
     $variables = json_decode($jsonString,true);
 
     // var_dump($variables);
-    $arrayDatos=array();
+    // global $arrayDatos;
     foreach($variables as $objeto)
  	{
  	echo "En este objeto juegan: ";
@@ -113,14 +113,14 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    $variable = self::getData($arrayDatos);
+    // $variable = self::getData($arrayDatos);
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
      
     //  $var = get_object_vars($variables);
  	// print_r($var);
-
+    global $longitud;
      $longitud = count($arrayDatos);
     for ($i=0; $i <$longitud ; $i++) { 
     # code...
@@ -139,8 +139,8 @@ $options = array(
     // }
      return $arrayDatos;
 }
-    public function getData($arrayDatos){
-        var_dump($arrayDatos);
+    public function getData(){
+        var_dump($longitud);
     // //    return [
     // //        'resultado'=> $this->$arrayDatos
     // //    ];
