@@ -144,7 +144,7 @@ $options = array(
     //    return [
     //        'resultado'=> $this->$arrayDatos
     //    ];
-    return '$dato';
+    return self::$arrayDatos;
     }
 
 }
