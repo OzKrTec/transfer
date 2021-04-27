@@ -113,7 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    $variable = self::getData('Hola Mundo');
+    $variable = self::getData();
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
@@ -139,12 +139,12 @@ $options = array(
     // }
      return $arrayDatos;
 }
-    public function getData($dato){
+    public function getData(){
     //     var_dump($dato);
     //    return [
     //        'resultado'=> $this->$arrayDatos
     //    ];
-    return $dato;
+    return '$dato';
     }
 
 }
