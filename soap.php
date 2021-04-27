@@ -138,7 +138,7 @@ $options = array(
     // }
      return $arrayDatos;
 }
-    public function getData(){
+    public function getData(Request $request){
     //     var_dump($dato);
     //    return [
     //        'resultado'=> $dato
