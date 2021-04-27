@@ -113,7 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    $this->getData($arrayDatos);
+    // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
      
@@ -141,7 +141,7 @@ $options = array(
     public function getData(Request $request){
     //     var_dump($dato);
        return [
-           'resultado'=> $request
+           'resultado'=> $this->$arrayDatos
        ];
     // return 'Hola';
     }
