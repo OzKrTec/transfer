@@ -113,7 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    var_dump($arrayDatos);
+    // var_dump($arrayDatos);
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
     // print_r(toObject($arrayDatos));
