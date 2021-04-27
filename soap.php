@@ -140,11 +140,11 @@ $options = array(
      return $arrayDatos;
 }
     public function getData($arrayDatos){
-    //     var_dump($dato);
-    //    return [
-    //        'resultado'=> $this->$arrayDatos
-    //    ];
-    return $arrayDatos;
+        var_dump($arrayDatos);
+    // //    return [
+    // //        'resultado'=> $this->$arrayDatos
+    // //    ];
+    // return $arrayDatos;
     }
 
 }
