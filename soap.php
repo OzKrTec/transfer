@@ -113,7 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    $variable = soap::getData('Hola Mundo');
+    $variable = self::getData('Hola Mundo');
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
