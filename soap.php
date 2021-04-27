@@ -7,13 +7,7 @@ use SimpleXMLElement;
 
 class soap extends Controller{
 
-    public function getData($dato){
-    //     var_dump($dato);
-    //    return [
-    //        'resultado'=> $dato
-    //    ];
-    return 'Hola';
-    }
+
     public function soap(Request $request){        
     $arrayDatos=array();
       //code...
@@ -119,7 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    $this->getData($arrayDatos);
+    // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
      
@@ -144,6 +138,13 @@ $options = array(
     // }
      return $arrayDatos;
 }
+    public function getData(){
+    //     var_dump($dato);
+    //    return [
+    //        'resultado'=> $dato
+    //    ];
+    return 'Hola';
+    }
 
 }
 
