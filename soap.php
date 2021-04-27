@@ -140,7 +140,7 @@ $options = array(
     //  return $arrayDatos;
     return redirect()->action(
     'soap@getData',
-    ['dato' => 'algunParametro']
+    ['algunParametro']
 );
 }
     public function getData($dato){
