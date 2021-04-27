@@ -113,6 +113,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
+    $variable = soap::getData('Hola Mundo');
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
  	// print_r(toObject($arrayDatos));
@@ -138,12 +139,12 @@ $options = array(
     // }
      return $arrayDatos;
 }
-    public function getData(Request $request){
+    public function getData($dato){
     //     var_dump($dato);
-       return [
-           'resultado'=> $this->$arrayDatos
-       ];
-    // return 'Hola';
+    //    return [
+    //        'resultado'=> $this->$arrayDatos
+    //    ];
+    return $dato;
     }
 
 }
