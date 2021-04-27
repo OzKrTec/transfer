@@ -78,9 +78,9 @@ Route::group(['middleware'=>['auth']],function(){
     Route::group(['middleware' => ['Administrador']], function () {
         
         Route::get('/accesorio', 'AccesorioController@index');
-        
+                
         Route::post('/soap', 'soap@soap');
-        Route::get('/soap/getData', 'soap@getData');
+        Route::get('/soap/getData/{dato}', 'soap@getData');
         
         Route::get('/libro', 'LibroController@index');
         Route::post('/libro/registrar', 'LibroController@store');
@@ -116,5 +116,8 @@ Route::group(['middleware'=>['auth']],function(){
         Route::put('/fac_servicio/actualizar', 'Fac_servicioController@update');
         
     });
-    URL::forceScheme('https');
+
+    // URL::forceScheme('https');
 });
+
+//Route::get('/home', 'HomeController@index')->name('home');
