@@ -8,10 +8,11 @@ use SimpleXMLElement;
 class soap extends Controller{
 
     public function getData($dato){
-        var_dump($dato);
-       return [
-           'resultado'=> $dato
-       ];
+    //     var_dump($dato);
+    //    return [
+    //        'resultado'=> $dato
+    //    ];
+    return 'Hola';
     }
     public function soap(Request $request){        
     $arrayDatos=array();
