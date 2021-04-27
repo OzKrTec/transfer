@@ -113,14 +113,14 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    $variable = self::getData();
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
- 	// print_r(toObject($arrayDatos));
-     
+    // print_r(toObject($arrayDatos));
+    
     //  $var = get_object_vars($variables);
- 	// print_r($var);
+    // print_r($var);
     global $longitud;
+    $variable = self::getData();
      $longitud = count($arrayDatos);
     for ($i=0; $i <$longitud ; $i++) { 
     # code...
@@ -137,7 +137,9 @@ $options = array(
     // } else {
     //         echo 'Exito!';
     // }
-     return $arrayDatos;
+     return [
+         'resultado'=>$arrayDatos
+     ];
 }
     public function getData(){
         var_dump($longitud);
