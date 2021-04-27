@@ -139,7 +139,7 @@ $options = array(
     // }
     //  return $arrayDatos;
     return redirect()->action(
-    'soap@getData',[$arrayDatos]);
+    'soap@getData',[2]);
     // ['algunParametro']
 // );
 }
