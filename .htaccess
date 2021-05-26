@@ -1,8 +1,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTPS} On
-RewriteCond %{HTTP_HOST} ^(www\.)?pruebas\.enercer\.com$ [NC]
-RewriteRule ^(.*)$ https://pruebas.enercer.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^(www\.)?pagofacil\.enercer\.com$ [NC]
+RewriteRule ^(.*)$ https://pagofacil.enercer.com/$1 [L,R=301]
 </IfModule>
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
