@@ -1,0 +1,20 @@
+<VirtualHost *:443>
+    ServerName pagofacil.enercer.com
+    #ServerAlias www.pruebas.enercer.com
+    ServerAdmin jrojas@enercer.com
+    DocumentRoot /var/www/html/pruebas.enercer.com
+    SSLEngine on
+    SSLCertificateFile  /etc/ssl/certs/pruebas.enercer.com.crt
+    SSLCertificateKeyFile   /etc/ssl/private/pruebas.enercer.com.key
+    SSLCertificateChainFile /etc/ssl/certs/gd_bundle-g2-g1.crt 
+
+    <Directory /var/www/html/pruebas.enercer.com>
+        Options FollowSymLinks
+        AllowOverride All
+    </Directory>
+
+</VirtualHost>
+#<VirtualHost *:80>
+ #   ServerName pruebas.enercer.com
+ #   Redirect / https://pruebas.enercer.com/
+#</VirtualHost>
