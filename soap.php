@@ -71,7 +71,7 @@ $options = array(
     //  'fields'=>array('id_cliente'=>'91541579'),
 
 );
-    $url = 'https://200.1.124.65/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
+    $url = 'https://200.1.124.118/PSEHostingWebServices/PSEHostingWS.asmx?WSDL';
     $client = new SoapClient($url,$options);
 
     // $xmlr = new SimpleXMLElement("<createTransactionPaymentHosting></createTransactionPaymentHosting>");
