@@ -48,11 +48,11 @@ $options = array(
                 'allow_self_signed' => true
           )
     )),
-    'ticketOfficeID' => '3109',
+    'ticketOfficeID' => '10478',
     'serviceCode' => '1001',
     'amount' => $request->amount,
     'vatAmount' => $request->amount,
-    'vatAmount' => '1234',
+    'vatAmount' => '123',
     'paymentID' => $request->paymentID,
     'paymentDescription' => $request->paymentDescription,
     'referenceNumber1' => '204.199.85.36',
