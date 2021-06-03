@@ -50,6 +50,7 @@ $options = array(
     )),
     'ticketOfficeID' => '10478',
     'serviceCode' => '1001',
+    'password' => '123',
     'amount' => $request->amount,
     'vatAmount' => $request->amount,
     'vatAmount' => '123',
