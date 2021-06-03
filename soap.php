@@ -37,7 +37,7 @@ class soap extends Controller{
 // catch (Exception $e){
 //     echo $e->getMessage();
 // }
-// echo 'Exito!';
+ echo 'Exito!';
 $options = array(
     'cache_wsdl' => 0,
     'trace' => 1,
@@ -114,7 +114,7 @@ $options = array(
         //  $error= $rta[0];
         
     }
-    // var_dump($arrayDatos);
+     var_dump($arrayDatos);
     // $this->getData($arrayDatos);
     // $getData($arrayDatos);
     // print_r(toObject($arrayDatos));
