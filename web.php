@@ -12,9 +12,13 @@
 */
 
 Route::group(['middleware'=>['guest']],function(){
+
     Route::get('/','Auth\LoginController@showLoginForm');
-    Route::post('/login', 'Auth\LoginController@login')->name('login');
-    // Route::get('/login', 'Auth\LoginController@login');
+    Route::get('/newuser','Auth\LoginController@showNewUser');
+    Route::post('/newuser','Auth\LoginController@newUser')->name('newuser');
+    Route::get('/login','Auth\LoginController@showLoginForm');
+   Route::post('/login', 'Auth\LoginController@login')->name('login');
+   Route::get('/logout','Auth\LoginController@showLoginForm');
 });
 
 Route::group(['middleware'=>['auth']],function(){
@@ -78,6 +82,10 @@ Route::group(['middleware'=>['auth']],function(){
     Route::group(['middleware' => ['Administrador']], function () {
         
         Route::get('/accesorio', 'AccesorioController@index');
+        Route::get('/getDataUser', 'PersonaController@getDataUser');
+        Route::get('/getDataFac', 'FacturasController@getDataFac');
+
+        Route::put('/persona/actualizar', 'UserController@update');
                 
         Route::post('/soap', 'soap@soap');
         Route::get('/soap/getData/{dato}', 'soap@getData');
@@ -117,7 +125,7 @@ Route::group(['middleware'=>['auth']],function(){
         
     });
 
-    URL::forceScheme('https');
+    // URL::forceScheme('https');
 });
 
 //Route::get('/home', 'HomeController@index')->name('home');
