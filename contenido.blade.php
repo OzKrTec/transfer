@@ -1,31 +1,77 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+@extends('principal')
+@section('contenido')
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Sistema OyM ">
-  <meta name="author" content="Codesinfo.com">
-  <meta name="keyword" content="Sistema OyM ENERCER">
+    @if(Auth::check())
+            @if (Auth::user()->idrol == 1)
+              <template v-if="menu==0">
+                <fac_det_servicio></fac_det_servicio>                
+            </template>
 
-  <title>Sistema OYM - OzKr-ENERCER</title>
- 
-  <link href="css/plantilla.css" rel="stylesheet">
-  {{-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> --}}
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+            <template v-if="menu==4">
+                <accesorio></accesorio>
+            </template>
 
-</head>
+            <template v-if="menu==64">
+                <user></user>
+            </template>
 
-<!-- <body class="app flex-row align-items-center ozkr"> -->
-<body class="app flex-row align-items-center">
-  <div class="container">
-    @yield('login')
-  </div>
+            <template v-if="menu==8">
+                <rol></rol>
+            </template>
 
-  <!-- Bootstrap and necessary plugins -->
-  <script src="js/plantilla.js"></script>
+            <template v-if="menu==89999">
+                <venta></venta>
+            </template>
 
-</body>
-</html>
+            <template v-if="menu==89922">
+                <libro></libro>
+            </template>
+
+            <template v-if="menu==89921">
+                <sector :ruta="ruta"></sector>
+            </template>
+
+            <template v-if="menu==89924">
+                <barrio :ruta="ruta"></barrio>
+            </template>
+            <template v-if="menu==24">
+                <fac_det_servicio></fac_det_servicio>
+            </template>
+            <template v-if="menu==112">
+                <fac_servicio :ruta="ruta"></fac_servicio>
+            </template>
+
+            @elseif (Auth::user()->idrol == 2)
+            <template v-if="menu==5">
+                <venta></venta>
+            </template>
+
+            <template v-if="menu==6">
+                <cliente></cliente>
+            </template>
+            <template v-if="menu==10">
+                <h1>Reporte de ventas</h1>
+            </template>
+
+            <template v-if="menu==11">
+                <h1>Ayuda</h1>
+            </template>
+
+            <template v-if="menu==12">
+                <h1>Acerca de</h1>
+            </template>
+
+            @elseif (Auth::user()->idrol == 5)
+
+             <template v-if="menu==0">
+                <dashboard></dashboard>                
+            </template>
+   
+            @else
+
+            @endif
+
+    @endif
+       
+        
+    @endsection
