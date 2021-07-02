@@ -14,8 +14,6 @@
 Route::group(['middleware'=>['guest']],function(){
 
     Route::get('/','Auth\LoginController@showLoginForm');
-    Route::get('/newuser','Auth\LoginController@showNewUser');
-    Route::post('/newuser','Auth\LoginController@newUser')->name('newuser');
     Route::get('/login','Auth\LoginController@showLoginForm');
    Route::post('/login', 'Auth\LoginController@login')->name('login');
    Route::get('/logout','Auth\LoginController@showLoginForm');
@@ -125,7 +123,7 @@ Route::group(['middleware'=>['auth']],function(){
         
     });
 
-        URL::forceScheme('https');
+    // URL::forceScheme('https');
 });
 
 //Route::get('/home', 'HomeController@index')->name('home');
