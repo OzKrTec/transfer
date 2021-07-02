@@ -123,7 +123,7 @@ Route::group(['middleware'=>['auth']],function(){
         
     });
 
-    // URL::forceScheme('https');
+    URL::forceScheme('https');
 });
 
 //Route::get('/home', 'HomeController@index')->name('home');
